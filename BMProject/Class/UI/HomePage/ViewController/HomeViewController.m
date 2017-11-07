@@ -111,7 +111,7 @@
         vc.oneParamsBlock = ^(NSString *str) {
             NSLog(@"传回来的值=%@",str);
             //传值到JS [self.webView stringByEvaluatingJavaScriptFromString:@”方法名(%@)",参数]];
-            NSString *strCall = [_webview stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"window.result('%@')",str]];
+            NSString *strCall = [_webview stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"result('%@')",str]];
             NSLog(@"JS返回值：%@",strCall);
 
         };

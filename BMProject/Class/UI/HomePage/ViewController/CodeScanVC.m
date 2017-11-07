@@ -436,9 +436,11 @@
         
         if (schemeMarkerRange.location == NSNotFound) {
 //            result = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@", trimmedStr]];
-            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"" message:trimmedStr delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-            alertView.tag = 100;
-            [alertView show];
+//            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"" message:trimmedStr delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+//            alertView.tag = 100;
+//            [alertView show];
+            [self dismissViewControllerAnimated:YES completion:nil];
+            self.oneParamsBlock(str);
         } else {
             scheme = [trimmedStr substringWithRange:NSMakeRange(0, schemeMarkerRange.location)];
             assert(scheme != nil);
