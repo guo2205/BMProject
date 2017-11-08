@@ -105,6 +105,7 @@
 		B7AE19B21FB081B100A64D91 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B7AE19A11FB081B100A64D91 /* UIButton+WebCache.m */; };
 		B7AE19FD1FB149E600A64D91 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = B7AE19FB1FB149E600A64D91 /* index.html */; };
 		B7AE19FE1FB149E600A64D91 /* static in Resources */ = {isa = PBXBuildFile; fileRef = B7AE19FC1FB149E600A64D91 /* static */; };
+		B7B4301C1FB1B8A4002A872C /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7B4301B1FB1B8A4002A872C /* Images-2.xcassets */; };
 		E18B81511FAAB6F00012BD6D /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E18B81391FAAB6F00012BD6D /* MASCompositeConstraint.m */; };
 		E18B81521FAAB6F00012BD6D /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E18B813C1FAAB6F00012BD6D /* MASConstraint.m */; };
 		E18B81531FAAB6F00012BD6D /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = E18B813E1FAAB6F00012BD6D /* MASConstraintMaker.m */; };
@@ -375,6 +376,7 @@
 		B7AE19A21FB081B100A64D91 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
 		B7AE19FB1FB149E600A64D91 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		B7AE19FC1FB149E600A64D91 /* static */ = {isa = PBXFileReference; lastKnownFileType = folder; path = static; sourceTree = "<group>"; };
+		B7B4301B1FB1B8A4002A872C /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
 		E18B81381FAAB6F00012BD6D /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		E18B81391FAAB6F00012BD6D /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
 		E18B813A1FAAB6F00012BD6D /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -814,6 +816,7 @@
 				8BB56E401AE399F2003A1982 /* LaunchScreen.xib */,
 				8BB56E311AE399F2003A1982 /* Supporting Files */,
 				3FAB43AF1B560E540024F6F2 /* SystemFramework */,
+				B7B4301B1FB1B8A4002A872C /* Images-2.xcassets */,
 			);
 			path = BMProject;
 			sourceTree = "<group>";
@@ -1422,7 +1425,7 @@
 					8BB56E2D1AE399F2003A1982 = {
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = X3LKGQJ5XP;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -1477,6 +1480,7 @@
 				8BB56E421AE399F2003A1982 /* LaunchScreen.xib in Resources */,
 				8BB56E3F1AE399F2003A1982 /* Images.xcassets in Resources */,
 				8BB56FA21AE39A82003A1982 /* PluginTool_README.txt in Resources */,
+				B7B4301C1FB1B8A4002A872C /* Images-2.xcassets in Resources */,
 				3F2823571B40E32D008968C3 /* home_more_btn@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1748,9 +1752,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: wen yu (Z63BVBV3Y2)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = X3LKGQJ5XP;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1782,8 +1787,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bj.subway;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "d99d6e95-e9a2-4efc-a6e6-93f55d092be8";
+				PROVISIONING_PROFILE_SPECIFIER = "发票";
 			};
 			name = Debug;
 		};
@@ -1791,9 +1796,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai Ke Jiang Information Technology Co., Ltd.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = X3LKGQJ5XP;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1825,8 +1831,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bj.subway;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "d99d6e95-e9a2-4efc-a6e6-93f55d092be8";
+				PROVISIONING_PROFILE_SPECIFIER = "发票";
 			};
 			name = Release;
 		};

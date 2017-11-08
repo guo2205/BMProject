@@ -135,12 +135,12 @@
     labIntroudction.textColor=[UIColor whiteColor];
     labIntroudction.textAlignment = 1;
     [labIntroudction setFont:[UIFont systemFontOfSize:13]];
-    labIntroudction.text= @"将二维码放入框中，将自动扫描\n\n双击下放区域退出扫描";
+    labIntroudction.text= @"将二维码放入框中，将自动扫描\n\n双击下方区域退出扫描";
 
     bgImage.userInteractionEnabled = YES;
     UITapGestureRecognizer *singleTapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(handleSingleTap:)];
-    singleTapGesture.numberOfTapsRequired =1; //点击次数
-    singleTapGesture.numberOfTouchesRequired  =2;//手指指数
+    singleTapGesture.numberOfTapsRequired = 2; //点击次数
+    singleTapGesture.numberOfTouchesRequired = 1;//手指指数
     [bgImage addGestureRecognizer:singleTapGesture];
     
     
